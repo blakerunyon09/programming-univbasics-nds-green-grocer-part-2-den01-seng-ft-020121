@@ -20,7 +20,11 @@ def apply_coupons(cart, coupons)
   # new_cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
   coupons.map { |coupon|
     item = find_item_by_name_in_collection(coupon[:item], cart)
-    pp item
+    if item[:count] >= coupon[:num]
+      p "This Item Qualifies"
+    else
+      p "This Item Does Not Qualify"
+    end
   }
 end
 
