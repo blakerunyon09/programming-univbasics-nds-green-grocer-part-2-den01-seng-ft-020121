@@ -25,8 +25,6 @@ def apply_coupons(cart, coupons)
         item[:count] -= coupon[:num]
         coupon[:item] = "#{coupon[:item]} W/COUPON"
         new_cart.push(coupon)
-      elsif item[:count] === coupon[:num]
-        p "Does Not Apply"
       end
     end
   }
