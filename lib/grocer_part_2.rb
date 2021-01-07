@@ -21,7 +21,7 @@ def apply_coupons(cart, coupons)
   coupons.map { |coupon|
     item = find_item_by_name_in_collection(coupon[:item], cart)
     #p coupon
-    p item
+    p item[:count]
   }
 end
 
