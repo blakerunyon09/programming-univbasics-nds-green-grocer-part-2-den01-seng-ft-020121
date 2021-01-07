@@ -31,8 +31,7 @@ def apply_coupons(cart, coupons)
       end
     end
   }
-  cart = new_cart
-  return new_cart
+  pp new_cart
 end
 
 apply_coupons(cart, coupons)
