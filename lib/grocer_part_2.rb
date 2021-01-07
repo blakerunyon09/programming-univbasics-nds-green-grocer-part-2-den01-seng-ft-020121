@@ -30,7 +30,7 @@ def apply_coupons(cart, coupons)
       end
     end
   }
-  new_cart
+  pp new_cart
 end
 
 apply_coupons(consolidate_cart(cart_test), coupons_test)
