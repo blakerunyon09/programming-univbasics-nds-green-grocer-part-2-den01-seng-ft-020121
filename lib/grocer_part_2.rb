@@ -30,10 +30,10 @@ def apply_coupons(cart, coupons)
       end
     end
   }
-  cart
+  pp cart
 end
 
-#apply_coupons(consolidate_cart(cart_test), coupons_test)
+apply_coupons(consolidate_cart(cart_test), coupons_test)
 
 def apply_clearance(cart)
   # Consult README for inputs and outputs
