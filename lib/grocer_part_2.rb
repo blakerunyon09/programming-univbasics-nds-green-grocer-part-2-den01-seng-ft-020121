@@ -1,6 +1,6 @@
 require_relative './part_1_solution.rb'
 
-cart = [
+cart_test = [
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
@@ -9,13 +9,13 @@ cart = [
   {:item => "BLACK_BEANS", :price => 2.50, :clearance => false}
 ]
 
-coupons = [
+coupons_test = [
   {:item => "AVOCADO", :num => 2, :cost => 20.00},
   {:item => "BLACK_BEANS", :num => 3, :cost => 3.00},
   {:item => "CHEESE", :num => 2, :cost => 3.00},
 ]
 
-def apply_coupons(cart, coupons)
+def apply_coupons(cart_test, coupons_test)
   new_cart = consolidate_cart(cart)
   # new_cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
   coupons.map { |coupon|
