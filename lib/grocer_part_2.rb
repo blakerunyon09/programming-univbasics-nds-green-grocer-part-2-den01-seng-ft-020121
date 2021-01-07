@@ -13,8 +13,8 @@ def apply_coupons(cart, coupons)
   # cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
   coupons.map { |coupon|
     if find_item_by_name_in_collection(coupon[:item], cart)
-      p "Got it"
     item = find_item_by_name_in_collection(coupon[:item], cart)
+    p item
       if item[:count] >= coupon[:num]
         item[:count] -= coupon[:num]
         coupon[:item] = "#{coupon[:item]} W/COUPON"
