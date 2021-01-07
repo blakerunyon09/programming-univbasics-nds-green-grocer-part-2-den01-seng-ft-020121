@@ -44,6 +44,7 @@ def apply_clearance(cart)
       item[:price] * .8
     end
   }
+  pp cart
   cart
 end
 
