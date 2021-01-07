@@ -21,6 +21,8 @@ def apply_coupons(cart, coupons)
   coupons.map { |coupon|
     if find_item_by_name_in_collection(coupon[:item], cart)
       p coupon[:item]
+    else
+      p "Not In Cart"
     end
   }
 end
