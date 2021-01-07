@@ -19,13 +19,13 @@ def apply_coupons(cart, coupons)
   new_cart = consolidate_cart(cart)
   # new_cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
   coupons.map { |coupon|
+    if find_item_by_name_in_collection(coupon[:item], cart)
     item = find_item_by_name_in_collection(coupon[:item], cart)
-    #p coupon
-    if nil
-    elsif item[:count] > coupon[:num]
-      "Applies"
-    else
-      nil
+      if item[:count] > coupon[:num]
+        "Applies"
+      else
+        "Does Not Apply"
+      end
     end
   }
 end
