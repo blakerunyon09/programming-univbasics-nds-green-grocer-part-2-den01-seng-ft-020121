@@ -24,6 +24,8 @@ def apply_coupons(cart, coupons)
       if item[:count] > coupon[:num]
         item[:count] -= coupon[:num]
         coupon[:item] = "#{coupon[:item]} W/COUPON"
+        coupon[:price] = coupon[:cost] / coupon[:num]
+        coupon[:clearance] = true
         new_cart.push(coupon)
       end
     end
