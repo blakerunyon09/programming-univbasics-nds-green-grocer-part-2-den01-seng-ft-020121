@@ -11,11 +11,17 @@ cart = [
 
 coupons = [
   {:item => "AVOCADO", :num => 2, :cost => 5.00},
+  {:item => "BLACK_BEANS", :num => 2, :cost => 3.00},
 ]
 
 def apply_coupons(cart, coupons)
   new_cart = consolidate_cart(cart)
-  pp new_cart
+  # new_cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
+  coupons.map { |coupon|
+    if find_item_by_name_in_collection(coupon[:item], cart)
+      p "Got One"
+    end
+  }
 end
 
 apply_coupons(cart, coupons)
