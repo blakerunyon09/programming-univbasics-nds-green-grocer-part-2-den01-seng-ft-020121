@@ -29,6 +29,7 @@ def apply_coupons(cart, coupons)
         coupon.delete(:num)
         coupon.delete(:cost)
         cart.push(coupon)
+      end
         if item[:count] === 0
           cart.delete(item)
         end
