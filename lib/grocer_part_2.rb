@@ -9,11 +9,17 @@ cart = [
   {:item => "BLACK_BEANS", :price => 2.50, :clearance => false}
 ]
 
+coupons = [
+  {:item => "AVOCADO", :num => 2, :cost => 5.00},
+  {:item => "BEER", :num => 2, :cost => 20.00},
+  {:item => "CHEESE", :num => 3, :cost => 15.00}
+]
+
 def apply_coupons(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+  consolidate_cart(cart)
 end
+
+apply_coupons(cart, coupons)
 
 def apply_clearance(cart)
   # Consult README for inputs and outputs
