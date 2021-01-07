@@ -15,7 +15,7 @@ coupons_test = [
   {:item => "CHEESE", :num => 2, :cost => 3.00},
 ]
 
-def apply_coupons(cart_test, coupons_test)
+def apply_coupons(cart, coupons)
   new_cart = consolidate_cart(cart)
   # new_cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
   coupons.map { |coupon|
@@ -34,7 +34,7 @@ def apply_coupons(cart_test, coupons_test)
   pp new_cart
 end
 
-apply_coupons(cart, coupons)
+apply_coupons(cart_test, coupons_test)
 
 def apply_clearance(cart)
   # Consult README for inputs and outputs
