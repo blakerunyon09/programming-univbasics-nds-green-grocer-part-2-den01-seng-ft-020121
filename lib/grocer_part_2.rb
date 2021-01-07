@@ -4,15 +4,19 @@ cart_test = [
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
   {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "KALE",    :price => 3.00, :clearance => false}
+  {:item => "KALE",    :price => 3.00, :clearance => false},
+  {:item => "KALE",    :price => 3.00, :clearance => false},
+  {:item => "KALE",    :price => 3.00, :clearance => false},
+  {:item => "BEER",    :price => 9.00, :clearance => false}
 ]
 
 coupons_test = [
-  {:item => "AVOCADO", :num => 2, :cost => 5.00}
+  {:item => "AVOCADO", :num => 2, :cost => 5.00},
+  {:item => "BEER", :num => 1, :cost => 5.00}
 ]
 
 def apply_coupons(cart, coupons)
-  # cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
+  #cart = [{:item=>"AVOCADO", :price=>3.0, :clearance=>true, :count=>3},{:item=>"KA...}]
   coupons.map { |coupon|
     if find_item_by_name_in_collection(coupon[:item], cart)
     item = find_item_by_name_in_collection(coupon[:item], cart)
