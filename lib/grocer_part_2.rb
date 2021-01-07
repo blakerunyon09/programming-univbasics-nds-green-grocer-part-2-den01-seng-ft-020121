@@ -22,9 +22,9 @@ def apply_coupons(cart, coupons)
     if find_item_by_name_in_collection(coupon[:item], cart)
     item = find_item_by_name_in_collection(coupon[:item], cart)
       if item[:count] > coupon[:num]
-        "Applies"
+        p "Applies"
       else
-        "Does Not Apply"
+        p "Does Not Apply"
       end
     end
   }
