@@ -32,6 +32,7 @@ def apply_coupons(cart, coupons)
     end
   }
   pp new_cart
+  new_cart
 end
 
 apply_coupons(cart_test, coupons_test)
