@@ -17,6 +17,7 @@ coupons = [
 
 def apply_coupons(cart, coupons)
   consolidate_cart(cart)
+  p cart
 end
 
 apply_coupons(cart, coupons)
