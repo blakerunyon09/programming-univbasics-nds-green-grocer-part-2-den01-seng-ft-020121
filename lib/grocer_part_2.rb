@@ -31,11 +31,8 @@ def apply_coupons(cart, coupons)
       end
     end
   }
-  pp new_cart
   new_cart
 end
-
-apply_coupons(cart_test, coupons_test)
 
 def apply_clearance(cart)
   # Consult README for inputs and outputs
