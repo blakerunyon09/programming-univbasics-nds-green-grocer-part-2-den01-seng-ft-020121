@@ -1,18 +1,12 @@
 require_relative './part_1_solution.rb'
 
 cart_test = [
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "AVOCADO", :price => 3.00, :clearance => true},
-  {:item => "KALE", :price => 3.00, :clearance => false},
-  {:item => "BLACK_BEANS", :price => 2.50, :clearance => false},
-  {:item => "BLACK_BEANS", :price => 2.50, :clearance => false}
+  {:item => "AVOCADO", :price => 3.00, :clearance => true, :count => 3},
+  {:item => "KALE",    :price => 3.00, :clearance => false, :count => 1}
 ]
 
 coupons_test = [
-  {:item => "AVOCADO", :num => 2, :cost => 20.00},
-  {:item => "BLACK_BEANS", :num => 3, :cost => 3.00},
-  {:item => "CHEESE", :num => 2, :cost => 3.00},
+  {:item => "AVOCADO", :num => 2, :cost => 5.00}
 ]
 
 def apply_coupons(cart, coupons)
