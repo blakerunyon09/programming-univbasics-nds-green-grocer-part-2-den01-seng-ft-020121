@@ -29,5 +29,5 @@ def consolidate_cart(cart)
     end
     index += 1
   end
-  pp new_cart
+  return new_cart
 end
