@@ -44,6 +44,7 @@ def apply_clearance(cart)
       item[:price] * .8
     end
   }
+  cart
 end
 
 apply_clearance(consolidate_cart(cart_test))
