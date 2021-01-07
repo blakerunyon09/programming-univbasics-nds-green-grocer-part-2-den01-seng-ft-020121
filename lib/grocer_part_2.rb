@@ -21,7 +21,8 @@ def apply_coupons(cart, coupons)
   coupons.map { |coupon|
     item = find_item_by_name_in_collection(coupon[:item], cart)
     #p coupon
-    if item[:count] > coupon[:num]
+    if nil
+    elsif item[:count] > coupon[:num]
       "Applies"
     else
       nil
