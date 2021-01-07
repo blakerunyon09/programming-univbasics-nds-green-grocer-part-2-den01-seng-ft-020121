@@ -10,8 +10,8 @@ cart = [
 ]
 
 coupons = [
-  {:item => "AVOCADO", :num => 5, :cost => 20.00},
-  {:item => "BLACK_BEANS", :num => 2, :cost => 3.00},
+  {:item => "AVOCADO", :num => 2, :cost => 20.00},
+  {:item => "BLACK_BEANS", :num => 1, :cost => 3.00},
   {:item => "CHEESE", :num => 2, :cost => 3.00},
 ]
 
@@ -21,10 +21,9 @@ def apply_coupons(cart, coupons)
   coupons.map { |coupon|
     if find_item_by_name_in_collection(coupon[:item], cart)
     item = find_item_by_name_in_collection(coupon[:item], cart)
-      if item[:count] >= coupon[:num]
-        p item
-        p coupon
-      else
+      if item[:count] > coupon[:num]
+        item[:count] -= coupon[:num]
+      elsif item [:count] === coupon[:num]
         p "Does Not Apply"
       end
     end
