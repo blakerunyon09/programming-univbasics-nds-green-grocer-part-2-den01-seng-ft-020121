@@ -10,7 +10,7 @@ cart = [
 ]
 
 coupons = [
-  {:item => "AVOCADO", :num => 2, :cost => 5.00},
+  {:item => "AVOCADO", :num => 5, :cost => 20.00},
   {:item => "BLACK_BEANS", :num => 2, :cost => 3.00},
   {:item => "CHEESE", :num => 2, :cost => 3.00},
 ]
