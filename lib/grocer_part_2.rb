@@ -39,9 +39,11 @@ end
 #apply_coupons(consolidate_cart(cart_test), coupons_test)
 
 def apply_clearance(cart)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+  cart.map { |item|
+    if item[:clearance] === true
+      item[:price] * .8
+    end
+  }
 end
 
 apply_clearance(consolidate_cart(cart_test))
