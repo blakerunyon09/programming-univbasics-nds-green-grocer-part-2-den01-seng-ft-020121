@@ -23,7 +23,7 @@ def apply_coupons(cart, coupons)
     item = find_item_by_name_in_collection(coupon[:item], cart)
       if item[:count] > coupon[:num]
         item[:count] -= coupon[:num]
-        p item
+        cart.push(coupon)
       elsif item [:count] === coupon[:num]
         p "Does Not Apply"
       end
