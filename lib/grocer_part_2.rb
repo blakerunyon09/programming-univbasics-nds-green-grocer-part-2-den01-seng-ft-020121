@@ -41,7 +41,7 @@ end
 def apply_clearance(cart)
   cart.map { |item|
     if item[:clearance] === true
-      item[:price] * .8
+      item[:price] * 0.8
     end
   }
   pp cart
