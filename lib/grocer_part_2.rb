@@ -3,9 +3,8 @@ require_relative './part_1_solution.rb'
 cart_test = [
   {:item => "BEER", :price => 13.00, :clearance => false},
   {:item => "BEER", :price => 13.00, :clearance => false},
-  {:item => "BEER", :price => 13.00, :clearance => false},
+  {:item => "BEER", :price => 13.00, :clearance => false}
 ]
-
 coupons_test = [
   {:item => "BEER", :num => 2, :cost => 20.00},
   {:item => "BEER", :num => 2, :cost => 20.00}
