@@ -24,6 +24,7 @@ def apply_coupons(cart, coupons)
         coupon.delete(:num)
         coupon.delete(:cost)
         cart.push(coupon)
+      elsif nil
       end
     end
   }
