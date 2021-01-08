@@ -32,7 +32,7 @@ def apply_coupons(cart, coupons)
       end
     end
   }
-  pp cart
+  #pp cart
   cart
 end
 
@@ -45,20 +45,16 @@ def apply_clearance(cart)
       item[:price] = item[:price].round(2)
     end
   }
-  pp cart
+  #pp cart
   cart
 end
 
-apply_clearance(consolidate_cart(cart_test))
+#apply_clearance(consolidate_cart(cart_test))
 
 def checkout(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # This method should call
-  # * consolidate_cart
-  # * apply_coupons
-  # * apply_clearance
-  #
-  # BEFORE it begins the work of calculating the total (or else you might have
-  # some irritated customers
+  consolidated_cart(cart)
+  apply_coupons(cart, coupons)
+  apply_clearance(cart)
+
+  pp cart
 end
