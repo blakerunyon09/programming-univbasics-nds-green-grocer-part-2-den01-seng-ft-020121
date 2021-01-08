@@ -62,7 +62,7 @@ def checkout(cart, coupons)
     total_price += item_total
   }
   if total_price >= 100
-    total_price *= 0.9
+    #total_price *= 0.9
   end
   pp total_price
 end
