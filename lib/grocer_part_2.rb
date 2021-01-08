@@ -65,6 +65,7 @@ def checkout(cart, coupons)
     total_price *= 0.9
   end
   pp total_price
+  total_price
 end
 
 checkout(cart_test, coupons_test)
