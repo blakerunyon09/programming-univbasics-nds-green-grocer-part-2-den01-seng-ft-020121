@@ -65,4 +65,4 @@ def checkout(cart, coupons)
   total_price
 end
 
-checkout(cart_test, coupons_test)
+#checkout(cart_test, coupons_test)
