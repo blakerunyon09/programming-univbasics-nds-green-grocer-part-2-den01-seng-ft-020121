@@ -61,7 +61,7 @@ def checkout(cart, coupons)
     item_total
     total_price += item_total
   }
-  pp total_price
+  total_price
 end
 
 checkout(cart_test, coupons_test)
