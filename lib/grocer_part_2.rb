@@ -36,7 +36,7 @@ def apply_coupons(cart, coupons)
   cart
 end
 
-#apply_coupons(consolidate_cart(cart_test), coupons_test)
+apply_coupons(consolidate_cart(cart_test), coupons_test)
 
 def apply_clearance(cart)
   cart.map { |item|
@@ -64,4 +64,4 @@ def checkout(cart, coupons)
   total_price
 end
 
-checkout(cart_test, coupons_test)
+#checkout(cart_test, coupons_test)
