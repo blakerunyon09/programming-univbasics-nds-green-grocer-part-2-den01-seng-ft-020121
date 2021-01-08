@@ -58,3 +58,5 @@ def checkout(cart, coupons)
 
   pp cart
 end
+
+checkout(cart_test, coupons_test)
