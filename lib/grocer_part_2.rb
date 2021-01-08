@@ -52,10 +52,14 @@ end
 #apply_clearance(consolidate_cart(cart_test))
 
 def checkout(cart, coupons)
+  total_price = 0
   cart = consolidate_cart(cart)
   apply_coupons(cart, coupons)
   apply_clearance(cart)
-  pp cart
+  cart.map { |item|
+    item_total = item[:price] * item[:count]
+    pp item_total
+  }
 end
 
 checkout(cart_test, coupons_test)
