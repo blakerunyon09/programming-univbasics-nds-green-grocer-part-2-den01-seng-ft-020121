@@ -7,7 +7,7 @@ cart_test = [
   {:item => "KALE",    :price => 3.00, :clearance => false},
   {:item => "KALE",    :price => 3.00, :clearance => false},
   {:item => "KALE",    :price => 3.00, :clearance => false},
-  {:item => "BEER",    :price => 9.00, :clearance => false}
+  {:item => "BEER",    :price => 99.00, :clearance => false}
 ]
 
 coupons_test = [
