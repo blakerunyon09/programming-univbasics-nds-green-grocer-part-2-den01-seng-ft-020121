@@ -15,7 +15,8 @@ def apply_coupons(cart, coupons)
   coupons.map { |coupon|
     if find_item_by_name_in_collection(coupon[:item], cart)
     item = find_item_by_name_in_collection(coupon[:item], cart)
-      if item[:count] >= coupon[:num]
+      if nil
+      elsif item[:count] >= coupon[:num]
         item[:count] -= coupon[:num]
         coupon[:item] = "#{coupon[:item]} W/COUPON"
         coupon[:price] = coupon[:cost] / coupon[:num]
@@ -24,7 +25,6 @@ def apply_coupons(cart, coupons)
         coupon.delete(:num)
         coupon.delete(:cost)
         cart.push(coupon)
-      elsif nil
       end
     end
   }
