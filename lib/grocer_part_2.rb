@@ -13,6 +13,7 @@ cart_test = [
 coupons_test = [
   {:item => "BEER", :num => 5, :cost => 5.00},
   {:item => "AVOCADO", :num => 2, :cost => 5.00}
+  {:item => "BURGERS", :num => 2, :cost => 5.00}
 ]
 
 def apply_coupons(cart, coupons)
