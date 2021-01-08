@@ -7,6 +7,7 @@ cart_test = [
 ]
 
 coupons_test = [
+  {:item => "BEER", :num => 2, :cost => 20.00},
   {:item => "BEER", :num => 2, :cost => 20.00}
 ]
 
